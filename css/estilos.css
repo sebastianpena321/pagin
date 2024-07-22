@@ -365,9 +365,162 @@ body {
     padding: 4px;
     border-radius: 20px;
 }
+
 .testimony_arrow {
     width: 90%;
     cursor: pointer;
 
 }
 
+
+/* questionssario */
+
+.questions {
+
+    text-align: center;
+}
+
+.questions_container {
+
+    display: grid ;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.questions_padding  {
+
+    padding: 0;
+    transition: padding 0.3s ease;
+    border:  1px solid #5454d4;
+    border-radius: 15px;
+
+}
+
+.questions_padding--add {
+    padding-bottom: 30px;
+}
+
+.questions_answer {
+    padding:0  30px  0 ;
+    overflow: hidden;
+}
+
+
+.questions_title {
+    display: flex;
+    font-size: 20px;
+    padding: 10px 0 10px;
+    cursor: pointer;
+    color: var(--color-title);
+    justify-content: space-between;    /* ESTO  ES PARA ENVIARLO A LA ESQUINA*/
+
+
+}
+
+.questions_arrow {
+    border-radius: 50%;
+    background-color:  var(--color-title);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    align-self:flex-end;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.questions_arrow.rotate {
+
+    transform: rotate(180deg);
+}
+
+.questions_show {
+text-align: left ;
+height: 0; 
+transition: height 0.3s ease;
+
+}
+.questions_img {
+    display: block ;
+}  
+
+.questions_copy{
+
+    
+    width: 60% ;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+
+/*FOOTER*/
+.footer{
+background-color: #1D293f;
+}
+
+.footer_title{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.footer_title, .footer_newsletter {
+color: #fff;
+
+}
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid #fff;
+     padding-bottom: 60px;
+}
+
+
+.nav--footer {
+
+    padding-bottom: 20px;
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100px;
+}
+
+.nav_link--footer{
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.footer_inputs{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.footer_input{
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    padding-left: 10px;
+     border-radius: 6px;
+     font-size: 1rem;
+     outline: nome;
+     border: nome;
+     margin-right: 16px;
+}
+
+.footer_submit  { 
+    margin-left: auto;
+    display: inline-block;
+     height: 50px;
+    padding: 0 20px;
+    background-color: #2091f9;
+     border: nome;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 6px;
+}
